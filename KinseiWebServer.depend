@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1512636414 source:/home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/ActiveSocket.cpp
+	"ActiveSocket.h"
+
+1512636414 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/ActiveSocket.h
+	"SimpleSocket.h"
+
+1513155635 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/SimpleSocket.h
+	<sys/stat.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdarg.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netinet/tcp.h>
+	<netinet/ip.h>
+	<netdb.h>
+	<linux/if_packet.h>
+	<linux/if_ether.h>
+	<linux/if.h>
+	<sys/sendfile.h>
+	<net/if.h>
+	<sys/time.h>
+	<sys/uio.h>
+	<unistd.h>
+	<fcntl.h>
+	<io.h>
+	<winsock2.h>
+	<Ws2tcpip.h>
+	"Host.h"
+	"StatTimer.h"
+
+1513155647 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/Host.h
+	<limits.h>
+
+1513155656 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/StatTimer.h
+	<string.h>
+	<Winsock2.h>
+	<time.h>
+	<stdio.h>
+	<sys/time.h>
+	"Host.h"
+
+1513084491 source:/home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/PassiveSocket.cpp
+	"PassiveSocket.h"
+
+1512636414 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/PassiveSocket.h
+	"ActiveSocket.h"
+
+1513085361 source:/home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiCommon/clsocket/SimpleSocket.cpp
+	"SimpleSocket.h"
+
+1513757413 source:/home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiDevice/KinseiDevice.cpp
+	"KinseiDevice.h"
+	<iostream>
+
+1513757456 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiDevice/KinseiDevice.h
+	"../KinseiCommon/clsocket/ActiveSocket.h"
+	<vector>
+	<string>
+
+1513760005 source:/home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiDeviceUtility.cpp
+	"KinseiDeviceUtility.h"
+	<windows.h>
+	<sys/time.h>
+	<time.h>
+	<unistd.h>
+	<json/writer.h>
+	<sstream>
+	<iostream>
+
+1513762245 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiDeviceUtility.h
+	<vector>
+	"../Kinsei/KinseiDevice/KinseiDevice.h"
+
+1513093715 source:/home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiTuner/KinseiTuner.cpp
+	"KinseiTuner.h"
+	<iostream>
+
+1512989830 /home/marco/Data/XetalLocal/KinseiWebServer/src/Kinsei/KinseiTuner/KinseiTuner.h
+	"../KinseiCommon/clsocket/ActiveSocket.h"
+	<vector>
+	<string>
+

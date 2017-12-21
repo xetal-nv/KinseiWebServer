@@ -30,7 +30,7 @@ using HttpServer = SimpleWeb::Server<SimpleWeb::HTTP>;
 
 int main() {
 
-  KinseiDeviceUtility kinsei_device_utility("192.168.2.172",2005);
+  KinseiDeviceUtility kinsei_device_utility("127.0.0.1",2005);
 
   if(kinsei_device_utility.IsConnected()==false){
     cout<<"Device not connected"<<endl;

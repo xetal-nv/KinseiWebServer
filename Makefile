@@ -1,14 +1,5 @@
 OS=_LINUX
-
 #_DARWIN, WIN32, _LINUX
-
-WORKDIR = `pwd`
-
-CC = gcc
-CXX = g++
-AR = ar
-LD = g++
-WINDRES = windres
 
 INC = 
 CFLAGS = 
@@ -28,13 +19,21 @@ OBJDIR_DEFAULT = .objs
 DEP_DEFAULT = 
 OUT_DEFAULT = WebServer
 
+ifndef OS
+	$(error OS is not set)
+endif
+	
+
+
 OBJ_DEFAULT = $(OBJDIR_DEFAULT)/src/main.o $(OBJDIR_DEFAULT)/src/Kinsei/KinseiTuner/KinseiTuner.o $(OBJDIR_DEFAULT)/src/Kinsei/KinseiDeviceUtility.o $(OBJDIR_DEFAULT)/src/Kinsei/KinseiDevice/KinseiDevice.o $(OBJDIR_DEFAULT)/src/Kinsei/KinseiCommon/clsocket/SimpleSocket.o $(OBJDIR_DEFAULT)/src/Kinsei/KinseiCommon/clsocket/PassiveSocket.o $(OBJDIR_DEFAULT)/src/Kinsei/KinseiCommon/clsocket/ActiveSocket.o
 
-all: default
+all:	default
+	
 
 clean: clean_default
 
 before_default: 
+	@echo Operative System set to $(OS)
 	test -d $(OBJDIR_DEFAULT)/src || mkdir -p $(OBJDIR_DEFAULT)/src
 	test -d $(OBJDIR_DEFAULT)/src/Kinsei/KinseiTuner || mkdir -p $(OBJDIR_DEFAULT)/src/Kinsei/KinseiTuner
 	test -d $(OBJDIR_DEFAULT)/src/Kinsei || mkdir -p $(OBJDIR_DEFAULT)/src/Kinsei
@@ -46,7 +45,7 @@ after_default:
 default: before_default out_default after_default
 
 out_default: before_default $(OBJ_DEFAULT) $(DEP_DEFAULT)
-	$(LD) $(LIBDIR_DEFAULT) -o $(OUT_DEFAULT) $(OBJ_DEFAULT)  $(LDFLAGS_DEFAULT) $(LIB_DEFAULT)
+	$(CXX) $(LIBDIR_DEFAULT) -o $(OUT_DEFAULT) $(OBJ_DEFAULT)  $(LDFLAGS_DEFAULT) $(LIB_DEFAULT)
 
 $(OBJDIR_DEFAULT)/src/main.o: src/main.cpp
 	$(CXX) $(CFLAGS_DEFAULT) $(INC_DEFAULT) -c src/main.cpp -o $(OBJDIR_DEFAULT)/src/main.o
