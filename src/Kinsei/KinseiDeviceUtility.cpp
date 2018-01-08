@@ -187,12 +187,12 @@ bool KinseiDeviceUtility::GetJsonString(std::string &jsonstring){
         if(kinseiData.zones[i].type == 0){
             my_json["zones"][i]["radius"]=kinseiData.zones[i].radius;
             my_json["zones"][i]["center"]["x"]=kinseiData.zones[i].center.x;
-            my_json["zones"][i]["center"]["y"]=kinseiData.zones[i].center.x;
+            my_json["zones"][i]["center"]["y"]=kinseiData.zones[i].center.y;
         }
         else{
             for(unsigned int j=0;j<kinseiData.zones[i].points.size();j++){
-                my_json["zones"][i]["corners"][j]["x"]=kinseiData.zones[i].points[i].x;
-                my_json["zones"][i]["corners"][j]["y"]=kinseiData.zones[i].points[i].y;
+                my_json["zones"][i]["corners"][j]["x"]=kinseiData.zones[i].points[j].x;
+                my_json["zones"][i]["corners"][j]["y"]=kinseiData.zones[i].points[j].y;
             }
         }
     }

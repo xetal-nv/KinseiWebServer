@@ -84,3 +84,135 @@
 	<vector>
 	<string>
 
+1515143417 source:/home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/ActiveSocket.cpp
+	"ActiveSocket.h"
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/ActiveSocket.h
+	"SimpleSocket.h"
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/SimpleSocket.h
+	<sys/stat.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdarg.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netinet/tcp.h>
+	<netinet/ip.h>
+	<netdb.h>
+	<linux/if_packet.h>
+	<linux/if_ether.h>
+	<linux/if.h>
+	<sys/sendfile.h>
+	<net/if.h>
+	<sys/time.h>
+	<sys/uio.h>
+	<unistd.h>
+	<fcntl.h>
+	<io.h>
+	<winsock2.h>
+	<Ws2tcpip.h>
+	"Host.h"
+	"StatTimer.h"
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/Host.h
+	<limits.h>
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/StatTimer.h
+	<string.h>
+	<Winsock2.h>
+	<time.h>
+	<stdio.h>
+	<sys/time.h>
+	"Host.h"
+
+1515143417 source:/home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/PassiveSocket.cpp
+	"PassiveSocket.h"
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/PassiveSocket.h
+	"ActiveSocket.h"
+
+1515143417 source:/home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiCommon/clsocket/SimpleSocket.cpp
+	"SimpleSocket.h"
+
+1515143417 source:/home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiDevice/KinseiDevice.cpp
+	"KinseiDevice.h"
+	<iostream>
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiDevice/KinseiDevice.h
+	"../KinseiCommon/clsocket/ActiveSocket.h"
+	<vector>
+	<string>
+
+1515143417 source:/home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiTuner/KinseiTuner.cpp
+	"KinseiTuner.h"
+	<iostream>
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiTuner/KinseiTuner.h
+	"../KinseiCommon/clsocket/ActiveSocket.h"
+	<vector>
+	<string>
+
+1515143417 source:/home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/main.cpp
+	"HTTPlibs/client_http.hpp"
+	"HTTPlibs/server_http.hpp"
+	<boost/property_tree/json_parser.hpp>
+	<boost/property_tree/ptree.hpp>
+	<algorithm>
+	<boost/filesystem.hpp>
+	<fstream>
+	<vector>
+	"Kinsei/KinseiDeviceUtility.h"
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/HTTPlibs/client_http.hpp
+	"utility.hpp"
+	<limits>
+	<mutex>
+	<random>
+	<unordered_set>
+	<vector>
+	<asio.hpp>
+	<asio/steady_timer.hpp>
+	<boost/asio.hpp>
+	<boost/asio/steady_timer.hpp>
+	<boost/utility/string_ref.hpp>
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/HTTPlibs/utility.hpp
+	"status_code.hpp"
+	<atomic>
+	<iostream>
+	<memory>
+	<string>
+	<unordered_map>
+	<emmintrin.h>
+	<intrin.h>
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/HTTPlibs/status_code.hpp
+	<map>
+	<string>
+	<unordered_map>
+	<vector>
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/HTTPlibs/server_http.hpp
+	"utility.hpp"
+	<functional>
+	<iostream>
+	<limits>
+	<map>
+	<mutex>
+	<sstream>
+	<thread>
+	<unordered_set>
+	<asio.hpp>
+	<asio/steady_timer.hpp>
+	<boost/asio.hpp>
+	<boost/asio/steady_timer.hpp>
+	<boost/regex.hpp>
+	<regex>
+
+1515143417 /home/marco/Data/XetalLocal/KinseiWebServerCPP11/src/Kinsei/KinseiDeviceUtility.h
+	<vector>
+	"../Kinsei/KinseiDevice/KinseiDevice.h"
+
