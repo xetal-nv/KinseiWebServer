@@ -195,7 +195,7 @@ public:
          *
          * @return bool if successful, 0 otherwise
          */
-        int GetSensorsStatus(vector<sensor>& sen);
+        bool GetSensorsStatus(vector<sensor>& sen);
 
 
 

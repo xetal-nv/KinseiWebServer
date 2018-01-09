@@ -31,6 +31,7 @@ void KinseiDeviceUtility::SleepMs(int ms) {
 
 
 KinseiDeviceUtility::KinseiDeviceUtility(const char* Address, uint16_t Port){
+    kinseidata_updated = true;
     pthread_mutex_init (&sem_mem, NULL);
     pthread_mutex_init (&sem_device, NULL);
     Connect(Address, Port);
@@ -41,6 +42,7 @@ KinseiDeviceUtility::KinseiDeviceUtility(const char* Address, uint16_t Port){
 
 
 KinseiDeviceUtility::KinseiDeviceUtility(){
+    kinseidata_updated = true;
     pthread_mutex_init (&sem_mem, NULL);
     pthread_mutex_init (&sem_device, NULL);
 }

@@ -304,7 +304,7 @@ bool KinseiDevice::GetOnlineStatus(bool* status){
         return 1;
 }
 
-int KinseiDevice::GetSensorsStatus(vector<sensor>& sen){
+bool KinseiDevice::GetSensorsStatus(vector<sensor>& sen){
         char command;
         int bytesReceived;              // Bytes read on each recv()
         unsigned char Buffer[10000];    // Buffer
@@ -327,7 +327,7 @@ int KinseiDevice::GetSensorsStatus(vector<sensor>& sen){
             sen[k].position.x=(unsigned int)((float)( ((unsigned int) Buffer[k*5+3] << 8) | (unsigned char)  Buffer[k*5+4] )/10.0);
             sen[k].position.y=(unsigned int)((float)( ((unsigned int) Buffer[k*5+5] << 8) | (unsigned char)  Buffer[k*5+6] )/10.0);
         }
-        return 0;
+        return 1;
 }
 
 
